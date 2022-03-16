@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#859095"
+    android:layout_height="match_parent">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relativelayout"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/nametag"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:text="INFORMATION"
+            android:gravity="center"
+            android:layout_marginTop="25dp"
+            android:paddingBottom="20dp"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"/>
+
+
+        <EditText
+            android:id="@+id/tvname"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:hint="Insert Name"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#DFDFDF"
+            app:layout_constraintTop_toBottomOf="@id/nametag"
+            tools:layout_editor_absoluteX="64dp"
+            tools:ignore="MissingConstraints" />
+
+
+        <EditText
+            android:id="@+id/tvphone"
+            android:layout_width="380dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1dp"
+            android:hint="Insert Phone"
+            android:padding="15dp"
+            android:textColor="@color/white"
+            android:textColorHint="#C5DCC2"
+            android:inputType="number"
+            app:layout_constraintTop_toBottomOf="@id/tvname"
+            tools:layout_editor_absoluteX="64dp"
+            tools:ignore="MissingConstraints" />
+
+        <Button
+            android:gravity="center"
+            android:id="@+id/save"
+            android:layout_marginTop="50dp"
+            android:text="@string/submit"
+            android:backgroundTint="@color/purple_200"
+            android:layout_width="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/tvphone"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_height="wrap_content"/>
+
+
+
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
